@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-texting: 'Archivo', sans-serif;
+
+  --hue: 200;
+  --fc-navigation: hsl(var(--hue), 24%, 90%);
+  --fc-navigation-hover: hsl(var(--hue), 46%, 74%);
+  --fc-heading: hsl(var(--hue), 24%, 80%);
+  --fc-texting: hsl(var(--hue), 24%, 85%);
+  --bg-color: hsl(var(--hue), 24%, 10%);
+
+
+}
+
+body {
+  max-width: clamp(10rem, 100rem + 100vw, 192rem);
+  height: 1vh;
+  background-color: var(--bg-color);
+  font-family: var(--ff-texting);
+  color: aliceblue;
+  
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 5rem;
+}
+
+#page {
+  margin-top: 10rem;
+}
+
+#linkPage {
+  font-size: clamp(1.5rem, 1rem + 1vw, 2.5rem);
+  color: var(--fc-navigation);
+  text-decoration: none;
+  padding-left: 2rem;
+  filter: opacity(50%);
+}
+
+#linkPage:hover {
+  color: var(--fc-navigation-hover);
+  filter:opacity(100%);
+}
+
+h1 {
+  color: var(--fc-heading);
+  font-size: clamp(1.5rem, 1rem + 1vw, 2.5rem);
+
+  /* margin-top: 5rem; */
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  color: var(--fc-texting);
+  font-size: clamp(1rem, 1rem + .8vw, 1.5rem);
+  line-height: clamp(1.5rem, 1.5rem + 1vw, 2.1rem);
+
+  margin: 2rem 2rem auto 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  margin: 3rem;
+
+  text-decoration: none;
+  color: var(--fc-texting);
+  font-style: italic;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.card {
+  width: 5rem;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "webpack": "^5.75.0"
+  },
+  "name": "universos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rovedabr/Universos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rovedabr/Universos/issues"
+  },
+  "homepage": "https://github.com/rovedabr/Universos#readme",
+  "description": ""
+}
